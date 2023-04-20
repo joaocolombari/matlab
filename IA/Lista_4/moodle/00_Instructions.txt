@@ -1,0 +1,2 @@
+1st: run TestMninstConv.m to train the convolutional neural network. The program will save the results into the MnistConv.mat file.
+2nd: run PlotFeatures.m to see how an image evolves at each layer of the convolutional neural network.

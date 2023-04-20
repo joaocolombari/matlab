@@ -1,0 +1,16 @@
+% SME0300 - Cálculo Numérico
+% Nome: Taís Aguiar - nUSP: 10857655
+clear all 
+close all
+% Item a) função "fun"
+% Item b)
+x0 = [1; 
+      1; 
+      1];
+sol = fsolve(@fun,x0)
+
+% Item c)
+res = norm(fun(sol))
+
+% Item d)
+[sol, res] = nonlinNewton(@fun,@Jac,[1; 1; 1],1E-8,1000)

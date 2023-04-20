@@ -1,0 +1,14 @@
+function [sol, res] = nonlinNewton (fun,Jac,x0,tol,nmax)
+  deltax = Jac(x0)\-fun(x0);
+  x0 = x0+deltax;
+  n = 1;
+    while (n<nmax && norm(deltax)>tol)
+      deltax = Jac(x0)\-fun(x0);
+      x0 = x0+deltax;
+      n = n+1;
+    end
+  if (n<nmax)
+    sol = x0;
+    res = norm(fun(sol));
+  end
+end
