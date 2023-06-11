@@ -18,7 +18,7 @@ hold on;
 bodemag(G1/10,options); bodemag(G2*10,options); 
 legend({'Curva de ganho gravação RIAA', ...
     'Curva de ganho reprodução RIAA'}, ...
-    'Location','North','FontSize',12); 
+    'Location','Northeast','FontSize',12); 
 title('Equalização RIAA','FontSize',16);
 xlabel('Magnitude(dB)','FontSize', 12); 
 ylabel('Frequência(Hz)','FontSize', 12);
@@ -61,7 +61,7 @@ hold on;
 bodemag(G2*10,options); scatter(freq,Result,'x');
 legend({'Curva de ganho reprodução RIAA', ...
     'Resultados obtidos nos pontos avaliados'}, ...
-    'Location','North','FontSize',12); 
+    'Location','Northeast','FontSize',12); 
 title('Resultados Equalização RIAA','FontSize',16);
 xlabel('Magnitude(dB)','FontSize', 12); 
 ylabel('Frequência(Hz)','FontSize', 12);
