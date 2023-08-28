@@ -52,6 +52,6 @@ legend({'Curva de ganho reprodução RIAA', ...
     'Resultados obtidos - Canal 2'}, ...
     'Location','Northeast','FontSize',12); 
 title('Resultados Equalização RIAA','FontSize',16);
-ylabel('Magnitude(dB)','FontSize', 12); 
-xlabel('Frequência(Hz)','FontSize', 12);
+ylabel('Magnitude','FontSize', 12); 
+xlabel('Frequência','FontSize', 12);
 
